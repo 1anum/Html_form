@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+
+<body>
+    <form style="border:3px; padding:10px; display:inline-block;">
+        <fieldset>
+
+            <h1>BILLING ADDRESS - BLUE NILE</h1>
+
+            <p style="color: red">
+                &bull; Please enter a valid zip code for your region.
+            </p>
+            <div style="background-color: lightblue; margin-bottom: 10px;">
+                <h2 style="display: inline-block; margin-right: 100px;">
+                    Would you like to create a Blue Nile Account and store this information?
+                </h2>
+                <input type="radio" name="create_account" id="yes">
+                <label for="Yes" style="margin: 60px;">Yes</label>
+                <input type="radio" name="create_account" id="no" checked>
+                <label for="No" style="margin-right: 60px;">No</label><br><br>
+            </div>
+
+            <!--main-content-->
+
+            <div>
+                <!--left-content-->
+                <div style="display: inline-block; width: 50%;">
+                    <div style="display: inline-block; text-align: left; padding-right: 40px;">
+                        <div style="margin-bottom: 10px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="First_Name">First Name</label>
+                            <input type="text" id="First_Name" placeholder="John" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="Last_Name">Last Name</label>
+                            <input type="text" id="Last_Name" placeholder="Newthan" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <label for="Company">Company</label>
+                            <input type="text" id="Company" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <div style="display: inline-block; vertical-align: top;">
+                                <span style="color: saddlebrown">&bigstar;</span>
+                                <label for="Phone" style="display: inline-block;">Phone</label>
+                            </div>
+                            <div style="display: inline-block; text-align: left;">
+                                <input type="number" id="phone" placeholder="John" style="width: 88px;">
+                                <em style="display:block;">Phone Number</em>
+                            </div>
+                            <div style="display: inline-block; text-align: left;">
+                                <input type="number" id="first_name" style="width: 40px;">
+                                <em style="display: block;">Ext.</em>
+                            </div>
+                            <div style="display: inline-block; text-align: left;">
+                                <a href="#">
+                                    Intl. <br> number?
+                                </a>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="Email">Email</label>
+                            <input type="email" id="email" placeholder="john.newman@bayward.com" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <div style="display: inline-block; vertical-align: top;">
+                                <span style="color: saddlebrown">&bigstar;</span>
+                                <label for="email">Re-type E-mail</label>
+                            </div>
+                            <div style="display: inline-block;">
+                                <input type="email" id="email" placeholder="John.newman@baymard.com"
+                                    style="width: 200px">
+                            </div>
+                            <div style="display: inline-block; width: 230px;">
+                                <em>
+                                    Enter an address where we can send e-mail confirming your order
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--rightcontent-->
+                
+                <div style="display: inline-block; width: 49%; text-align: right;">
+                    <div style="display: inline-block; padding-right: 135px;">
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="Address">Address</label>
+                            <input type="text" id="address" placeholder="2125 st" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <input type="text" id="address1" style="width: 200;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="City">City</label>
+                            <input type="text" id="city" placeholder="san francisco" style="width: 200px;">
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="State">State</label>
+                            <select id="state" style="width: 200px;">
+                                <option value="CA-California">CA-California</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 8px; height: 24px; color: red;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="Zip">Zip Code</label>
+                            <select id="zip" style="width: 200px; height: 24px; border-color: red;">
+                                <option value="9412w">9412w</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="color: saddlebrown">&bigstar;</span>
+                            <label for="zip">Country</label>
+                            <select id="zip" style="width: 200px; height: 24px;">
+                                <option value="United state">United State</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <div style="display: inline-block; margin-right: 7px;">
+                                <span style="color: saddlebrown">&bigstar;</span>
+                                <label for="address_type">Address type</label>
+                            </div>
+                            <div style="display: inline-block; margin-top: 16px;">
+                                <input type="radio" name="address_type">
+                                <label for="home" style="margin-right: 36px;">Home</label>
+                                <input type="radio" name="address_type">
+                                <label for="Business">Business</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 style="display: inline-block; margin-right: 120px;">
+                    Are you Shipping this order to your billing address?
+                </h3>
+                <input type="radio" name="billing_address" id="billing" checked>
+                <label for="billing" style="margin-right:40px;">Yes</label>
+                <input type="radio" name="billing_address" id="billing">
+                <label for="billing">No</label>
+            </div>
+    </form>
+</body>
+
+</html>
